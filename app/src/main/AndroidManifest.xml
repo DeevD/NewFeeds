@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.heinhtet.newfeeds">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/book"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash_Intro.Splash_Screen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash_Intro.Wellcome_Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:icon="@drawable/book"
+            android:logo="@drawable/book"
+            android:roundIcon="@drawable/book"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Google.DetailTap"
+            android:label="@string/title_activity_detail_tap"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".guide.AppIntro"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <meta-data android:name="android.webkit.WebView.MetricsOptOut"
+            android:value="true" />
+    </application>
+
+</manifest>

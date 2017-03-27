@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeLayout">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/google_recycler_list"
+        android:layout_margin="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prograssbar"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/empty_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_text"
+        />
+
+    <ImageView
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_width="100dp"
+        android:layout_centerInParent="true"
+        android:shape="ring"
+        android:layout_height="100dp"
+        android:id="@+id/empty_image"/>
+
+
+</RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
